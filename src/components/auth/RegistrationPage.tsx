@@ -125,7 +125,7 @@ export default function RegistrationPage() {
                   </div>
                 </>
               )}
-
+              <p> Or you have an account <a href='./class/JoinClassPage' style={{'color':'orange'}}> Join class here</a> </p>
               <button type="submit" className="btn-primary w-full">
                 Register
               </button>

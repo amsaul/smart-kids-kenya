@@ -1,15 +1,14 @@
-import React from 'react';
 import { Users, Target, Lightbulb } from 'lucide-react';
 
 const teamMembers = [
   {
-    name: 'John Doe',
+    name: 'MB Saul',
     role: 'Founder & Lead Instructor',
     image: 'https://res.cloudinary.com/dzq0v3cjh/image/upload/v1732439087/WhatsApp_Image_2024-11-24_at_10.41.12_apr3me.jpg',
-    description: 'With over 10 years of experience in tech education, I am passionate about sparking creativity in kids.',
+    description: 'With 7+ years of experience in tech education, I am passionate about sparking creativity in kids.',
   },
   {
-    name: 'Jane Smith',
+    name: 'Lin Smith',
     role: 'Robotics Expert',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400',
     description: 'Bringing the magic of robotics to young minds.',
