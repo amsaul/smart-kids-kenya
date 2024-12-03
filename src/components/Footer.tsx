@@ -51,7 +51,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>Nairobi, Kenya</li>
               <li>info@smartkidskenya.com</li>
-              <li>+254 712 345 678</li>
+              <li>+254 790 223 386</li>
             </ul>
           </div>
 

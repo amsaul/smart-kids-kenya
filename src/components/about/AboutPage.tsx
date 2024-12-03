@@ -5,7 +5,7 @@ const teamMembers = [
   {
     name: 'John Doe',
     role: 'Founder & Lead Instructor',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400',
+    image: 'https://res.cloudinary.com/dzq0v3cjh/image/upload/v1732439087/WhatsApp_Image_2024-11-24_at_10.41.12_apr3me.jpg',
     description: 'With over 10 years of experience in tech education, I am passionate about sparking creativity in kids.',
   },
   {
