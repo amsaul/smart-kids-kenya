@@ -154,7 +154,7 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-6 h-6 text-orange-500 mr-4" />
-                  <span>+254 712 345 678</span>
+                  <span>+254 790 223 386</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-6 h-6 text-orange-500 mr-4" />

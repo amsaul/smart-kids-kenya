@@ -1,4 +1,3 @@
-import React from 'react';
 import { Clock, Users, ChevronRight } from 'lucide-react';
 import { Course } from '../../types';
 
