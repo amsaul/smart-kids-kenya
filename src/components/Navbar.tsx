@@ -98,12 +98,20 @@ export default function Navbar() {
               Contact
             </Link>
             <Link 
+              to="/join-class" 
+              className="block px-3 py-2 text-gray-700 hover:text-orange-500"
+              onClick={() => setIsOpen(false)}
+            >
+              join class
+            </Link>
+            <Link 
               to="/register" 
               className="block px-3 py-2 bg-orange-500 text-white rounded-md"
               onClick={() => setIsOpen(false)}
             >
               Get Started
             </Link>
+            
           </div>
         </div>
       )}
