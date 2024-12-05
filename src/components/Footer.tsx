@@ -41,6 +41,11 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link to="/join-class" className="text-gray-400 hover:text-white">
+                  join class
+                </Link>
+              </li>
             </ul>
           </div>
 
