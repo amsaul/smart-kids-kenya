@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import Toast from '../shared/Toast';
-import emailjs from 'emailjs-com';
 import { ContactFormData } from '../../types';
 
 export default function ContactPage() {
@@ -18,49 +17,59 @@ export default function ContactPage() {
     type: 'success',
   });
 
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyboMA8PwznmsL95cM0J0g01bPodNDjkFxPpV0cqTHiksdYTLzJeRQLJ-lHqjUylEq2rw/exec'; // Replace with your actual URL
+
+  // Handles form submission
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    // Validate email
+    if (!formData.email.includes('@')) {
+      setToast({
+        show: true,
+        message: 'Please enter a valid email address.',
+        type: 'error',
+      });
+      return;
+    }
+
     try {
-      // Send email via EmailJS
-      await emailjs.send(
-        'service_yt9mssd', // Replace with your EmailJS Service ID
-        'template_vv36wb4', // Replace with your EmailJS Template ID
-        {
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        },
-        'xUSoQNbLPEl1CG2Wi' // Replace with your EmailJS User ID
-      );
+      // Prepare form data
+      const formDataToSend = new FormData();
+      Object.entries(formData).forEach(([key, value]) => formDataToSend.append(key, value));
 
-      // Clear form
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
+      // Send data to Google Apps Script
+      const response = await fetch(scriptURL, {
+        method: 'POST',
+        body: formDataToSend,
       });
 
-      // Show success message
-      setToast({
-        show: true,
-        message: 'Thank you! Your message has been sent successfully.',
-        type: 'success',
-      });
+      if (response.ok) {
+        // Clear form fields
+        setFormData({ name: '', email: '', subject: '', message: '' });
+
+        // Show success toast
+        setToast({
+          show: true,
+          message: 'Thank you! Your message has been sent successfully.',
+          type: 'success',
+        });
+      } else {
+        throw new Error('Failed to send message.');
+      }
     } catch (error) {
-      console.error('EmailJS Error:', error);
+      console.error('Submission Error:', error);
 
-      // Show error message
+      // Show error toast
       setToast({
         show: true,
-        message: 'Sorry, there was an error sending your message. Please try again later.',
+        message: `Submission Error: ${error.message}`,
         type: 'error',
       });
     }
   };
 
+  // Handles input change for form fields
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -179,6 +188,7 @@ export default function ContactPage() {
         </div>
       </div>
 
+      {/* Toast Notification */}
       <Toast
         message={toast.message}
         type={toast.type}
