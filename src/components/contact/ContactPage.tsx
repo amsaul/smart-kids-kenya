@@ -63,7 +63,7 @@ export default function ContactPage() {
       // Show error toast
       setToast({
         show: true,
-        message: `Submission Error: ${error.message}`,
+        message: `Submission Error: ${error}`,
         type: 'error',
       });
     }
