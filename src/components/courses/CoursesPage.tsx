@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import CourseCard from './CourseCard';
 import CourseModal from './CourseModal';
 import EnrollmentModal from './EnrollmentModal';
@@ -31,7 +31,7 @@ const courses: Course[] = [
       'Create responsive websites',
       'Master HTML5 and CSS3',
       'Learn modern web design principles',
-      'Build portfolio-ready projects'
+      'Build projects'
     ]
   },
   {
@@ -60,6 +60,34 @@ const courses: Course[] = [
       'Learn sensor integration',
       'Develop automation skills',
       'Create interactive robotic projects'
+    ]
+  },
+  {
+    id: 5,
+    title: 'AI Fundamentals',
+    description: 'Kids will learn how to build machines that perform tasks which require human intelligence. The course is Perfect for those who want to take their software development skills to the next level.',
+    imageUrl: 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?auto=format&fit=crop&q=80&w=1000',
+    duration: '12 weeks',
+    level: 'Intermediate',
+    learningOutcomes: [
+      'Master AI fundamentals',
+      'Build interactive applications for machines',
+      'Learn modern ES6+ features',
+      'Develop problem-solving skills'
+    ]
+  },
+  {
+    id: 6,
+    title: 'Machine Learning Fundamentals',
+    description: 'Learn how to combine data and algorithms to ebnable AI imitate the way that humans learn',
+    imageUrl: 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?auto=format&fit=crop&q=80&w=1000',
+    duration: '12 weeks',
+    level: 'Intermediate',
+    learningOutcomes: [
+      'Master data and algorithms fundamentals',
+      'Research and communication',
+      'Learn modern ES6+ features',
+      'Develop problem-solving skills'
     ]
   },
 ];
