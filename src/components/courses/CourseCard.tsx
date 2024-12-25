@@ -1,12 +1,16 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { Clock, Users, ChevronRight } from 'lucide-react';
 import { Course } from '../../types';
 
 interface CourseCardProps {
   course: Course;
-  onLearnMore: (course: Course) => void;
 }
 
-export default function CourseCard({ course, onLearnMore }: CourseCardProps) {
+export default function CourseCard({ course }: CourseCardProps) {
+  // Debug log
+  console.log('Rendering course card:', course);
+  
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
       <img
@@ -27,13 +31,13 @@ export default function CourseCard({ course, onLearnMore }: CourseCardProps) {
             <span>{course.level}</span>
           </div>
         </div>
-        <button 
+        <Link 
+          to={`/courses/${course.id}`}
           className="w-full btn-primary flex items-center justify-center"
-          onClick={() => onLearnMore(course)}
         >
           Learn More
           <ChevronRight className="w-4 h-4 ml-1" />
-        </button>
+        </Link>
       </div>
     </div>
   );

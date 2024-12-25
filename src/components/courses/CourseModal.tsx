@@ -1,3 +1,4 @@
+import React from 'react';
 import { X, Clock, Users, BookOpen, ExternalLink } from 'lucide-react';
 import { Course } from '../../types';
 

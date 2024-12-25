@@ -42,7 +42,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/join-class" className="text-gray-400 hover:text-white">
+                <Link to="/JoinClass" className="text-gray-400 hover:text-white">
                   join class
                 </Link>
               </li>

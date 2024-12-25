@@ -1,4 +1,3 @@
-import React from 'react';
 import { BookOpen, Users, Lightbulb } from 'lucide-react';
 
 const features = [

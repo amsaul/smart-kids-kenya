@@ -4,10 +4,27 @@ export interface Course {
   description: string;
   imageUrl: string;
   duration: string;
+  price: number;
   level: 'Beginner' | 'Intermediate' | 'Advanced';
-  learningOutcomes?: string[];
+  learningOutcomes: string[];
+  curriculum: {
+    week: number;
+    title: string;
+    topics: string[];
+  }[];
+  requirements?: string[];
+  tools?: string[];
+  playgroundLink?: string;
 }
 
+export interface EnrollmentFormData {
+  studentName: string;
+  age: number;
+  email: string;
+  parentName: string;
+  parentPhone: string;
+  courseId: number;
+}
 export interface Testimonial {
   id: number;
   name: string;

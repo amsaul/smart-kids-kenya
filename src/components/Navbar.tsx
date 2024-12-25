@@ -44,7 +44,7 @@ export default function Navbar() {
             <Link to="/about" className="text-gray-700 hover:text-orange-500">About</Link>
             <Link to="/courses" className="text-gray-700 hover:text-orange-500">Courses</Link>
             <Link to="/contact" className="text-gray-700 hover:text-orange-500">Contact</Link>
-            <Link to="/join-class" className="text-gray-700 hover:text-orange-500">Join Class</Link>
+            <Link to="/JoinClass" className="text-gray-700 hover:text-orange-500">Join Class</Link>
             <Link 
               to="/register" 
               className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600"
