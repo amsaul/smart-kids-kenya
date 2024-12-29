@@ -34,7 +34,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <Code2 className="h-8 w-8 text-orange-500" />
-              <span className="ml-2 text-xl font-bold text-gray-800">Smart Kids Kenya</span>
+              <span className="ml-2 text-xl font-bold text-gray-800">iSoma</span>
             </Link>
           </div>
 
@@ -44,7 +44,7 @@ export default function Navbar() {
             <Link to="/about" className="text-gray-700 hover:text-orange-500">About</Link>
             <Link to="/courses" className="text-gray-700 hover:text-orange-500">Courses</Link>
             <Link to="/contact" className="text-gray-700 hover:text-orange-500">Contact</Link>
-            <Link to="/JoinClass" className="text-gray-700 hover:text-orange-500">Join Class</Link>
+            <Link to="/JoinClassPage" className="text-gray-700 hover:text-orange-500">Join Class</Link>
             <Link 
               to="/register" 
               className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600"

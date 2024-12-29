@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="flex items-center">
               <Code2 className="h-8 w-8 text-orange-500" />
-              <span className="ml-2 text-xl font-bold">Smart Kids Kenya</span>
+              <span className="ml-2 text-xl font-bold">iSoma</span>
             </Link>
             <p className="mt-4 text-gray-400">
               Empowering young minds through technology education.
@@ -54,7 +54,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-400">
               <li>Nairobi, Kenya</li>
-              <li>info@smartkidskenya.com</li>
+              <li>info@iSoma.com</li>
               <li>+254 790 223 386</li>
             </ul>
           </div>
@@ -80,7 +80,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>© 2024 Smart Kids Kenya. All rights reserved.</p>
+          <p>© 2024 iSoma Kenya. All rights reserved.</p>
         </div>
       </div>
     </footer>

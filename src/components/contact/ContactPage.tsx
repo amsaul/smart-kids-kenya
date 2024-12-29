@@ -159,7 +159,7 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="w-6 h-6 text-orange-500 mr-4" />
-                  <span>info@smartkidskenya.com</span>
+                  <span>info@isoma.com</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-6 h-6 text-orange-500 mr-4" />

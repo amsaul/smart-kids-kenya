@@ -56,7 +56,7 @@ export default function JoinClassPage() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="email" className="block text-gray-700 mb-2">
-                Email
+                Name of your school
               </label>
               <input
                 type="email"

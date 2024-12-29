@@ -11,7 +11,7 @@ export default function Hero() {
             <span className="block text-yellow-200">Through Technology</span>
           </h1>
           <p className="mt-3 max-w-md mx-auto text-base text-white sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            Join Smart Kids Kenya and embark on an exciting journey into the world of coding, robotics, and digital innovation.
+            Join iSoma and embark on an exciting journey into the world of coding, robotics, and digital innovation.
           </p>
           <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
             <div className="rounded-md shadow">

@@ -2,7 +2,7 @@ import { Users, Target, Lightbulb } from 'lucide-react';
 
 const teamMembers = [
   {
-    name: 'MB Saul',
+    name: 'M B Saul',
     role: 'Founder & Lead Instructor',
     image: 'https://res.cloudinary.com/dzq0v3cjh/image/upload/v1732439087/WhatsApp_Image_2024-11-24_at_10.41.12_apr3me.jpg',
     description: 'With 7+ years of experience in tech education, I am passionate about sparking creativity in kids.',
@@ -15,6 +15,27 @@ const teamMembers = [
   },
 ];
 
+const schoolsTaught = [
+  {
+    id:1,
+    name: 'New Dawn Academy',
+    image: 'url goes here',
+    kids: 100
+  },
+  {
+    id:2,
+    name: 'Medulla Academy',
+    image: 'url goes here',
+    kids: 350,
+  },
+  {
+    id:1,
+    name: 'The Wango School',
+    image: 'url goes here',
+    kids: 300,
+  },
+]
+
 export default function AboutPage() {
   return (
     <div className="bg-white">
@@ -23,7 +44,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h1 className="text-4xl font-bold mb-6">Inspiring the Next Generation of Innovators</h1>
           <p className="text-xl max-w-3xl mx-auto">
-            At Smart Kids Kenya, we are dedicated to making coding accessible and fun for kids.
+            At iSoma, we are dedicated to making coding accessible and fun for kids.
             Our mission is to empower children with the skills they need to become creators of technology, not just consumers.
           </p>
         </div>

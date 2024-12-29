@@ -15,7 +15,7 @@ export default function RegistrationPage() {
     <div className="bg-gray-50 py-16">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-lg shadow-md p-8">
-          <h1 className="text-3xl font-bold text-center mb-8">Join Smart Kids Kenya</h1>
+          <h1 className="text-3xl font-bold text-center mb-8">Join iSoma</h1>
 
           {/* User Type Toggle */}
           <div className="flex justify-center mb-8">

@@ -21,7 +21,7 @@ export default function App() {
             <Route path="/courses" element={<CoursesPage />} />
             <Route path="/courses/:id" element={<CourseDetailPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/JoinClass" element={<JoinClassPage />} />
+            <Route path="/JoinClassPage" element={<JoinClassPage />} />
             <Route path="/register" element={<RegistrationPage />} />
           </Routes>
         </main>
