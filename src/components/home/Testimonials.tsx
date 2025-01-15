@@ -30,7 +30,7 @@ export default function Testimonials() {
             What Our Community Says
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Hear from parents and students about their experience with Smart Kids Kenya
+            Hear from parents and students about their experience with iSoma
           </p>
         </div>
 
