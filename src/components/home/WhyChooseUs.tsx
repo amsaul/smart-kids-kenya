@@ -27,7 +27,7 @@ export default function WhyChooseUs() {
             Why Choose Us
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Discover what makes Smart Kids Kenya the perfect choice for your child's tech education
+            Discover what makes iSoma the perfect choice for your child's tech education
           </p>
         </div>
 
