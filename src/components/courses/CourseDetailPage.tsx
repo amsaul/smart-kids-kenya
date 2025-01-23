@@ -95,7 +95,7 @@ export default function CourseDetailPage() {
                 </li>
               ))}
             </ul>
-            <p className="underline hover:decoration-pink-500 text-xl font-bold mb-4"> <a href="https://scratch.mit.edu/projects/596275656">activity link 1</a></p>
+            <p className="underline hover:decoration-pink-500 text-xl font-bold mb-4"> <a href="https://scratch.mit.edu/projects/890777481/editor/">activity link 1</a></p>
             <p className="underline hover:decoration-pink-500 text-xl font-bold mb-4"> <a href="https://scratch.mit.edu/projects/599334055/editor/">activity link 2</a></p>
           </div>
 
